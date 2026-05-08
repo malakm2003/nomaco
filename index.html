@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="We help mom-and-pop shops operate smarter, build their digital presence, and grow through practical technology and partnership strategies." />
+  <title>[Your Business Name] — Small Business Growth Partner</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">
+        <!-- To use a logo image instead: <img src="images/logo.png" alt="[Your Business Name]" class="nav__logo-img" /> -->
+        <span class="nav__logo-text">[Your Business Name]</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home"     class="nav__link">Home</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#about"    class="nav__link">About</a></li>
+        <li><a href="#process"  class="nav__link">Our Approach</a></li>
+        <li><a href="#contact"  class="nav__link nav__link--cta">Free Consultation</a></li>
+      </ul>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">&times;</button>
+    <ul class="mobile-menu__links">
+      <li><a href="#home"     class="mobile-menu__link">Home</a></li>
+      <li><a href="#services" class="mobile-menu__link">Services</a></li>
+      <li><a href="#about"    class="mobile-menu__link">About</a></li>
+      <li><a href="#process"  class="mobile-menu__link">Our Approach</a></li>
+      <li><a href="#who"      class="mobile-menu__link">Who We Help</a></li>
+      <li><a href="#contact"  class="mobile-menu__link mobile-menu__link--cta">Free Consultation</a></li>
+    </ul>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Small Business Growth Partner</p>
+      <h1 class="hero__headline">
+        We simplify your<br />
+        <span class="hero__rotating" id="rotatingWord">operations.</span>
+      </h1>
+      <p class="hero__sub">
+        Helping family-owned businesses build their digital presence,
+        streamline daily workflows, and grow through smart, practical solutions.
+      </p>
+      <div class="hero__buttons">
+        <a href="#services" class="btn btn--primary">Explore Services</a>
+        <a href="#contact"  class="btn btn--outline">Get a Free Consultation</a>
+      </div>
+    </div>
+    <a href="#services" class="hero__scroll" aria-label="Scroll down">
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       TAGLINE STRIP
+  ═══════════════════════════════════════════════ -->
+  <div class="strip">
+    <div class="strip__inner">
+      <span>Operations &amp; Workflow</span>
+      <span class="strip__dot">✦</span>
+      <span>Social Media Management</span>
+      <span class="strip__dot">✦</span>
+      <span>Website Design &amp; Setup</span>
+      <span class="strip__dot">✦</span>
+      <span>Business Automation</span>
+      <span class="strip__dot">✦</span>
+      <span>Partnership Strategy</span>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__eyebrow">What We Do</p>
+        <h2 class="section-header__title">Three Ways We Help Your Business Thrive</h2>
+        <p class="section-header__sub">
+          We combine hands-on implementation with practical technology to deliver real, lasting results.
+        </p>
+      </div>
+
+      <div class="services__grid">
+
+        <div class="service-card" data-index="1">
+          <div class="service-card__number">01</div>
+          <div class="service-card__icon">
+            <i data-feather="settings"></i>
+          </div>
+          <h3 class="service-card__title">Operations Optimization</h3>
+          <p class="service-card__desc">
+            We map your daily workflows, eliminate bottlenecks, and put simple systems
+            in place so your business runs predictably—without you managing every detail.
+          </p>
+          <ul class="service-card__list">
+            <li>Workflow mapping &amp; redesign</li>
+            <li>Task tracking systems</li>
+            <li>Scheduling improvements</li>
+            <li>Team coordination structure</li>
+          </ul>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </div>
+
+        <div class="service-card service-card--featured" data-index="2">
+          <div class="service-card__badge">Most Popular</div>
+          <div class="service-card__number">02</div>
+          <div class="service-card__icon">
+            <i data-feather="monitor"></i>
+          </div>
+          <h3 class="service-card__title">Technology &amp; Digital Presence</h3>
+          <p class="service-card__desc">
+            From social media to your website to automated follow-ups—we build and manage
+            the digital side of your business so customers can find you and trust you.
+          </p>
+          <ul class="service-card__list">
+            <li>Social media setup &amp; management</li>
+            <li>Website design &amp; refresh</li>
+            <li>Automation &amp; smart scheduling</li>
+            <li>Customer follow-up workflows</li>
+          </ul>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </div>
+
+        <div class="service-card" data-index="3">
+          <div class="service-card__number">03</div>
+          <div class="service-card__icon">
+            <i data-feather="users"></i>
+          </div>
+          <h3 class="service-card__title">Partnership &amp; Revenue Growth</h3>
+          <p class="service-card__desc">
+            Local businesses grow faster when they work together. We identify opportunities,
+            coordinate cross-promotions, and structure referral pipelines that bring in new customers.
+          </p>
+          <ul class="service-card__list">
+            <li>Local partnership opportunities</li>
+            <li>Cross-promotion coordination</li>
+            <li>Referral pipeline structure</li>
+            <li>Loyalty &amp; engagement campaigns</li>
+          </ul>
+          <a href="#contact" class="service-card__link">Learn more →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       BOLD BREAK DIVIDER
+  ═══════════════════════════════════════════════ -->
+  <div class="bold-break">
+    <div class="bold-break__inner">
+      <p class="bold-break__large">RETHINK</p>
+      <p class="bold-break__large bold-break__large--outline">YOUR BUSINESS.</p>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="container about__grid">
+
+      <div class="about__image-wrap">
+        <!-- Replace with your own team/workspace photo by swapping the src below -->
+        <img
+          class="about__image"
+          src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80"
+          alt="Two consultants working with a local small business owner"
+          loading="lazy"
+        />
+        <div class="about__stat-card">
+          <span class="about__stat-number">100%</span>
+          <span class="about__stat-label">Hands-On Implementation</span>
+        </div>
+      </div>
+
+      <div class="about__content">
+        <p class="section-header__eyebrow">About Us</p>
+        <h2 class="about__title">We don't hand you a report and leave.</h2>
+        <p class="about__body">
+          We started this business because we saw a real gap: small business owners who work
+          incredibly hard every day, but don't have access to the kind of operational and
+          technology support that bigger companies take for granted.
+        </p>
+        <p class="about__body">
+          We work directly alongside owners—implementing changes, training your team,
+          managing your digital presence, and staying until results are real and sustainable.
+          No jargon. No unnecessary complexity. Just practical improvements that make a difference.
+        </p>
+        <div class="about__pillars">
+          <div class="about__pillar">
+            <i data-feather="check-circle"></i>
+            <span>Project management expertise</span>
+          </div>
+          <div class="about__pillar">
+            <i data-feather="check-circle"></i>
+            <span>Workflow design experience</span>
+          </div>
+          <div class="about__pillar">
+            <i data-feather="check-circle"></i>
+            <span>Modern technology knowledge</span>
+          </div>
+          <div class="about__pillar">
+            <i data-feather="check-circle"></i>
+            <span>Results that are realistic &amp; sustainable</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn--primary">Work With Us</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       PROCESS
+  ═══════════════════════════════════════════════ -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <p class="section-header__eyebrow section-header__eyebrow--light">Our Approach</p>
+        <h2 class="section-header__title">How We Work With You</h2>
+        <p class="section-header__sub">
+          A clear four-step process to ensure every engagement delivers real, measurable results.
+        </p>
+      </div>
+
+      <div class="process__steps">
+
+        <div class="process__step">
+          <div class="process__step-num">01</div>
+          <div class="process__step-content">
+            <h3>Business Workflow Review</h3>
+            <p>We analyze your daily operations, customer flow, communication systems, and tool usage to understand exactly where time and money are being lost.</p>
+          </div>
+        </div>
+
+        <div class="process__connector"></div>
+
+        <div class="process__step">
+          <div class="process__step-num">02</div>
+          <div class="process__step-content">
+            <h3>Opportunity Mapping</h3>
+            <p>We identify your top time-saving improvements, automation opportunities, coordination gaps, and revenue-growth openings—then prioritize by impact.</p>
+          </div>
+        </div>
+
+        <div class="process__connector"></div>
+
+        <div class="process__step">
+          <div class="process__step-num">03</div>
+          <div class="process__step-content">
+            <h3>Implementation Plan</h3>
+            <p>We roll up our sleeves and implement: workflow improvements, technology setup, digital presence, and engagement strategies—with you, not just for you.</p>
+          </div>
+        </div>
+
+        <div class="process__connector"></div>
+
+        <div class="process__step">
+          <div class="process__step-num">04</div>
+          <div class="process__step-content">
+            <h3>Ongoing Support <span class="process__optional">(Optional)</span></h3>
+            <p>Businesses can continue working with us as their growth partner—monthly check-ins, new improvements, and priority support as they scale.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       WHO WE HELP
+  ═══════════════════════════════════════════════ -->
+  <section class="who" id="who">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__eyebrow">Who We Work With</p>
+        <h2 class="section-header__title">Built for Owner-Operated Businesses</h2>
+        <p class="section-header__sub">
+          If you run your business yourself and want support that actually works in the real world—we built this for you.
+        </p>
+      </div>
+
+      <div class="who__grid">
+        <div class="who__tile"><i data-feather="shopping-bag"></i><span>Retail Stores</span></div>
+        <div class="who__tile"><i data-feather="coffee"></i><span>Restaurants &amp; Cafés</span></div>
+        <div class="who__tile"><i data-feather="scissors"></i><span>Salons &amp; Barbershops</span></div>
+        <div class="who__tile"><i data-feather="activity"></i><span>Fitness Studios</span></div>
+        <div class="who__tile"><i data-feather="tool"></i><span>Repair Shops</span></div>
+        <div class="who__tile"><i data-feather="home"></i><span>Local Service Providers</span></div>
+        <div class="who__tile"><i data-feather="briefcase"></i><span>Family-Owned Offices</span></div>
+        <div class="who__tile"><i data-feather="heart"></i><span>Community Businesses</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       FREE CONSULTATION CTA BANNER
+  ═══════════════════════════════════════════════ -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <div class="cta-banner__text">
+        <h2>Free 20-Minute Operations Health Check</h2>
+        <p>
+          We'll identify your top 3 operational bottlenecks and your single biggest
+          technology opportunity—no commitment, no pressure.
+        </p>
+      </div>
+      <a href="#contact" class="btn btn--primary btn--large">Schedule Your Free Review</a>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       BEFORE & AFTER RESULTS
+  ═══════════════════════════════════════════════ -->
+  <section class="results" id="results">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__eyebrow">Results</p>
+        <h2 class="section-header__title">What Changes Look Like</h2>
+      </div>
+
+      <div class="results__grid">
+
+        <div class="results__card">
+          <div class="results__before">
+            <span class="results__label results__label--before">Before</span>
+            <p>No social media presence — customers couldn't find the business online</p>
+          </div>
+          <div class="results__arrow"><i data-feather="arrow-right"></i></div>
+          <div class="results__after">
+            <span class="results__label results__label--after">After</span>
+            <p>Active profiles on Google, Instagram &amp; Facebook — new inquiries within the first month</p>
+          </div>
+        </div>
+
+        <div class="results__card">
+          <div class="results__before">
+            <span class="results__label results__label--before">Before</span>
+            <p>Owner spent 2+ hours daily on scheduling and manual follow-ups</p>
+          </div>
+          <div class="results__arrow"><i data-feather="arrow-right"></i></div>
+          <div class="results__after">
+            <span class="results__label results__label--after">After</span>
+            <p>Automated workflows cut that to under 20 minutes per day</p>
+          </div>
+        </div>
+
+        <div class="results__card">
+          <div class="results__before">
+            <span class="results__label results__label--before">Before</span>
+            <p>Website hadn't been updated in 3+ years — no mobile version</p>
+          </div>
+          <div class="results__arrow"><i data-feather="arrow-right"></i></div>
+          <div class="results__after">
+            <span class="results__label results__label--after">After</span>
+            <p>Fresh, mobile-friendly site live in 2 weeks with online bookings enabled</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container contact__grid">
+
+      <div class="contact__info">
+        <p class="section-header__eyebrow">Get in Touch</p>
+        <h2 class="contact__title">Let's start with a conversation.</h2>
+        <p class="contact__body">
+          Not sure where to begin? That's okay. Fill out the form and we'll reach out
+          to schedule your free 20-minute Operations Health Check.
+        </p>
+        <div class="contact__details">
+          <div class="contact__detail">
+            <i data-feather="mail"></i>
+            <!-- UPDATE: replace with your real email -->
+            <span>[your@email.com]</span>
+          </div>
+          <div class="contact__detail">
+            <i data-feather="phone"></i>
+            <!-- UPDATE: replace with your phone number -->
+            <span>[Your Phone Number]</span>
+          </div>
+          <div class="contact__detail">
+            <i data-feather="map-pin"></i>
+            <!-- UPDATE: replace with your city -->
+            <span>[Your City, State]</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM SETUP: Replace YOUR_FORM_ID in the action below with your Formspree form ID.
+           Sign up free at https://formspree.io — takes 2 minutes. -->
+      <form class="contact__form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="name">Your Name <span class="form__req">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form__group">
+            <label for="business">Business Name</label>
+            <input type="text" id="business" name="business" placeholder="Smith's Bakery" />
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__group">
+            <label for="email">Email <span class="form__req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form__group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="service">What can we help with?</label>
+          <select id="service" name="service">
+            <option value="">Select a service...</option>
+            <option value="operations">Operations Optimization</option>
+            <option value="technology">Technology &amp; Digital Presence</option>
+            <option value="social">Social Media Management</option>
+            <option value="website">Website Design / Refresh</option>
+            <option value="partnership">Partnership &amp; Revenue Growth</option>
+            <option value="all">All of the above / Not sure</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="message">Tell us about your business <span class="form__req">*</span></label>
+          <textarea id="message" name="message" rows="4" placeholder="What does your business do? What are your biggest challenges right now?" required></textarea>
+        </div>
+        <div class="form__group form__group--checkbox">
+          <label class="form__checkbox-label">
+            <input type="checkbox" name="healthcheck" value="yes" />
+            <span>I'd like the free 20-minute Operations Health Check</span>
+          </label>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        <p class="form__note">We respond within 1 business day. No spam, ever.</p>
+        <div class="form__success" id="formSuccess">
+          ✓ Thank you! We'll be in touch within one business day.
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">[Your Business Name]</p>
+        <p class="footer__tagline">Helping small businesses operate smarter,<br />reach further, and grow faster.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">Our Approach</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Operations Optimization</a></li>
+          <li><a href="#services">Technology &amp; Digital</a></li>
+          <li><a href="#services">Social Media Management</a></li>
+          <li><a href="#services">Website Design</a></li>
+          <li><a href="#services">Partnership Strategy</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Get In Touch</h4>
+        <p>[your@email.com]</p>
+        <p>[Your Phone Number]</p>
+        <div class="footer__social">
+          <!-- UPDATE: add your real social media links -->
+          <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 [Your Business Name]. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
