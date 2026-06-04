@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="We help mom-and-pop shops operate smarter, build their digital presence, and grow through practical technology and partnership strategies." />
-  <title>[Your Business Name] — Small Business Growth Partner</title>
+  <meta name="description"
+    content="Noma Consulting Co helps mom-and-pop shops operate smarter, build their digital presence, and grow through practical technology and partnership strategies. Based at nomaconsultingco.com." />
+  <title>Noma Consulting Co — Small Business Growth Partner</title>
   <link rel="stylesheet" href="css/style.css" />
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
   <!-- Feather Icons -->
   <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <!-- Calendly popup widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
+
 <body>
 
   <!-- ═══════════════════════════════════════════════
@@ -21,16 +29,17 @@
   <nav class="nav" id="nav">
     <div class="nav__inner">
       <a href="#home" class="nav__logo">
-        <!-- To use a logo image instead: <img src="images/logo.png" alt="[Your Business Name]" class="nav__logo-img" /> -->
-        <span class="nav__logo-text">[Your Business Name]</span>
+        <!-- To use a logo image instead: <img src="images/logo.png" alt="Noma Consulting Co" class="nav__logo-img" /> -->
+        <span class="nav__logo-text">Noma Consulting Co</span>
       </a>
 
       <ul class="nav__links" id="navLinks">
-        <li><a href="#home"     class="nav__link">Home</a></li>
+        <li><a href="#home" class="nav__link">Home</a></li>
         <li><a href="#services" class="nav__link">Services</a></li>
-        <li><a href="#about"    class="nav__link">About</a></li>
-        <li><a href="#process"  class="nav__link">Our Approach</a></li>
-        <li><a href="#contact"  class="nav__link nav__link--cta">Free Consultation</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#process" class="nav__link">Our Approach</a></li>
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        <li><a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/nomaconsultingco/free-consultation'});return false;" class="nav__link nav__link--cta">Free Consultation</a></li>
       </ul>
 
       <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
@@ -43,12 +52,13 @@
   <div class="mobile-menu" id="mobileMenu">
     <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">&times;</button>
     <ul class="mobile-menu__links">
-      <li><a href="#home"     class="mobile-menu__link">Home</a></li>
+      <li><a href="#home" class="mobile-menu__link">Home</a></li>
       <li><a href="#services" class="mobile-menu__link">Services</a></li>
-      <li><a href="#about"    class="mobile-menu__link">About</a></li>
-      <li><a href="#process"  class="mobile-menu__link">Our Approach</a></li>
-      <li><a href="#who"      class="mobile-menu__link">Who We Help</a></li>
-      <li><a href="#contact"  class="mobile-menu__link mobile-menu__link--cta">Free Consultation</a></li>
+      <li><a href="#about" class="mobile-menu__link">About</a></li>
+      <li><a href="#process" class="mobile-menu__link">Our Approach</a></li>
+      <li><a href="#who" class="mobile-menu__link">Who We Help</a></li>
+      <li><a href="#pricing" class="mobile-menu__link">Pricing</a></li>
+      <li><a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/nomaconsultingco/free-consultation'});return false;" class="mobile-menu__link mobile-menu__link--cta">Free Consultation</a></li>
     </ul>
   </div>
 
@@ -70,7 +80,7 @@
       </p>
       <div class="hero__buttons">
         <a href="#services" class="btn btn--primary">Explore Services</a>
-        <a href="#contact"  class="btn btn--outline">Get a Free Consultation</a>
+        <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/nomaconsultingco/free-consultation'});return false;" class="btn btn--outline">Get a Free Consultation</a>
       </div>
     </div>
     <a href="#services" class="hero__scroll" aria-label="Scroll down">
@@ -119,16 +129,16 @@
           </div>
           <h3 class="service-card__title">Operations Optimization</h3>
           <p class="service-card__desc">
-            We map your daily workflows, eliminate bottlenecks, and put simple systems
-            in place so your business runs predictably—without you managing every detail.
+            We audit how your business actually runs day-to-day, then fix it. Less time
+            fighting fires, more time serving customers—with systems that work even when you're not watching.
           </p>
           <ul class="service-card__list">
-            <li>Workflow mapping &amp; redesign</li>
-            <li>Task tracking systems</li>
-            <li>Scheduling improvements</li>
+            <li>Full workflow audit &amp; bottleneck report</li>
+            <li>Scheduling &amp; task tracking setup</li>
             <li>Team coordination structure</li>
+            <li>90-day action roadmap</li>
           </ul>
-          <a href="#contact" class="service-card__link">Learn more →</a>
+          <a href="#pricing" class="service-card__link">See pricing →</a>
         </div>
 
         <div class="service-card service-card--featured" data-index="2">
@@ -139,35 +149,35 @@
           </div>
           <h3 class="service-card__title">Technology &amp; Digital Presence</h3>
           <p class="service-card__desc">
-            From social media to your website to automated follow-ups—we build and manage
-            the digital side of your business so customers can find you and trust you.
+            We get your business online, looking good, and running on autopilot. Social media,
+            website, automated follow-ups—we build it, manage it, and keep it working for you.
           </p>
           <ul class="service-card__list">
-            <li>Social media setup &amp; management</li>
-            <li>Website design &amp; refresh</li>
-            <li>Automation &amp; smart scheduling</li>
-            <li>Customer follow-up workflows</li>
+            <li>Social media setup &amp; monthly content</li>
+            <li>Website design or refresh</li>
+            <li>Booking &amp; scheduling automation</li>
+            <li>Automated customer follow-up workflows</li>
           </ul>
-          <a href="#contact" class="service-card__link">Learn more →</a>
+          <a href="#pricing" class="service-card__link">See pricing →</a>
         </div>
 
         <div class="service-card" data-index="3">
           <div class="service-card__number">03</div>
           <div class="service-card__icon">
-            <i data-feather="users"></i>
+            <i data-feather="link"></i>
           </div>
-          <h3 class="service-card__title">Partnership &amp; Revenue Growth</h3>
+          <h3 class="service-card__title">Growth Partnerships</h3>
           <p class="service-card__desc">
-            Local businesses grow faster when they work together. We identify opportunities,
-            coordinate cross-promotions, and structure referral pipelines that bring in new customers.
+            We connect you with other local businesses for mutual growth. Think joint promotions,
+            shared audiences, and referral networks that bring in customers without ad spend.
           </p>
           <ul class="service-card__list">
-            <li>Local partnership opportunities</li>
-            <li>Cross-promotion coordination</li>
-            <li>Referral pipeline structure</li>
-            <li>Loyalty &amp; engagement campaigns</li>
+            <li>Local business landscape analysis</li>
+            <li>Curated partner matchmaking</li>
+            <li>Cross-promotion campaign coordination</li>
+            <li>Referral pipeline setup &amp; tracking</li>
           </ul>
-          <a href="#contact" class="service-card__link">Learn more →</a>
+          <a href="#pricing" class="service-card__link">See pricing →</a>
         </div>
 
       </div>
@@ -194,12 +204,8 @@
 
       <div class="about__image-wrap">
         <!-- Replace with your own team/workspace photo by swapping the src below -->
-        <img
-          class="about__image"
-          src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80"
-          alt="Two consultants working with a local small business owner"
-          loading="lazy"
-        />
+        <img class="about__image" src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80"
+          alt="Two consultants working with a local small business owner" loading="lazy" />
         <div class="about__stat-card">
           <span class="about__stat-number">100%</span>
           <span class="about__stat-label">Hands-On Implementation</span>
@@ -263,7 +269,8 @@
           <div class="process__step-num">01</div>
           <div class="process__step-content">
             <h3>Business Workflow Review</h3>
-            <p>We analyze your daily operations, customer flow, communication systems, and tool usage to understand exactly where time and money are being lost.</p>
+            <p>We analyze your daily operations, customer flow, communication systems, and tool usage to understand
+              exactly where time and money are being lost.</p>
           </div>
         </div>
 
@@ -273,7 +280,8 @@
           <div class="process__step-num">02</div>
           <div class="process__step-content">
             <h3>Opportunity Mapping</h3>
-            <p>We identify your top time-saving improvements, automation opportunities, coordination gaps, and revenue-growth openings—then prioritize by impact.</p>
+            <p>We identify your top time-saving improvements, automation opportunities, coordination gaps, and
+              revenue-growth openings—then prioritize by impact.</p>
           </div>
         </div>
 
@@ -283,7 +291,8 @@
           <div class="process__step-num">03</div>
           <div class="process__step-content">
             <h3>Implementation Plan</h3>
-            <p>We roll up our sleeves and implement: workflow improvements, technology setup, digital presence, and engagement strategies—with you, not just for you.</p>
+            <p>We roll up our sleeves and implement: workflow improvements, technology setup, digital presence, and
+              engagement strategies—with you, not just for you.</p>
           </div>
         </div>
 
@@ -293,7 +302,8 @@
           <div class="process__step-num">04</div>
           <div class="process__step-content">
             <h3>Ongoing Support <span class="process__optional">(Optional)</span></h3>
-            <p>Businesses can continue working with us as their growth partner—monthly check-ins, new improvements, and priority support as they scale.</p>
+            <p>Businesses can continue working with us as their growth partner—monthly check-ins, new improvements, and
+              priority support as they scale.</p>
           </div>
         </div>
 
@@ -311,7 +321,8 @@
         <p class="section-header__eyebrow">Who We Work With</p>
         <h2 class="section-header__title">Built for Owner-Operated Businesses</h2>
         <p class="section-header__sub">
-          If you run your business yourself and want support that actually works in the real world—we built this for you.
+          If you run your business yourself and want support that actually works in the real world—we built this for
+          you.
         </p>
       </div>
 
@@ -330,6 +341,180 @@
 
 
   <!-- ═══════════════════════════════════════════════
+       PRICING
+  ═══════════════════════════════════════════════ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__eyebrow">Pricing</p>
+        <h2 class="section-header__title">Simple, Transparent Pricing</h2>
+        <p class="section-header__sub">
+          Every service starts with a free 20-minute consultation. No hidden fees, no long-term contracts required.
+        </p>
+      </div>
+
+      <!-- Per-service cards -->
+      <div class="pricing__grid">
+
+        <!-- Service 1 -->
+        <div class="pricing-card">
+          <div class="pricing-card__icon"><i data-feather="settings"></i></div>
+          <h3 class="pricing-card__title">Operations Optimization</h3>
+          <p class="pricing-card__desc">For owners who want clarity on how their business runs and a clear plan to fix it.</p>
+          <div class="pricing-card__options">
+            <div class="pricing-option">
+              <span class="pricing-option__type">One-Time Audit</span>
+              <div class="pricing-option__price">
+                <span class="pricing-option__amount">$349</span>
+              </div>
+              <ul class="pricing-option__list">
+                <li>2–3 hour deep-dive session</li>
+                <li>Full workflow audit &amp; bottleneck report</li>
+                <li>90-day priority action roadmap</li>
+                <li>1 follow-up strategy call</li>
+              </ul>
+            </div>
+            <div class="pricing-option pricing-option--monthly">
+              <span class="pricing-option__type">Monthly Support</span>
+              <div class="pricing-option__price">
+                <span class="pricing-option__amount">$199</span>
+                <span class="pricing-option__per">/mo</span>
+              </div>
+              <ul class="pricing-option__list">
+                <li>Monthly check-in call</li>
+                <li>Ongoing process improvements</li>
+                <li>Email support</li>
+                <li><em>Add-on after audit</em></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--primary btn--full">Get Started</a>
+        </div>
+
+        <!-- Service 2 — Featured -->
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">Most Popular</div>
+          <div class="pricing-card__icon"><i data-feather="monitor"></i></div>
+          <h3 class="pricing-card__title">Technology &amp; Digital Presence</h3>
+          <p class="pricing-card__desc">For businesses that need to get online, stay visible, and stop losing customers to competitors.</p>
+          <div class="pricing-card__options">
+            <div class="pricing-option">
+              <span class="pricing-option__type">Setup Package</span>
+              <div class="pricing-option__price">
+                <span class="pricing-option__amount">$599</span>
+              </div>
+              <ul class="pricing-option__list">
+                <li>Social media profiles (up to 3 platforms)</li>
+                <li>Website build or refresh</li>
+                <li>Booking &amp; scheduling tool setup</li>
+                <li>Automated follow-up system</li>
+              </ul>
+            </div>
+            <div class="pricing-option pricing-option--monthly">
+              <span class="pricing-option__type">Monthly Management</span>
+              <div class="pricing-option__price">
+                <span class="pricing-option__amount">$399</span>
+                <span class="pricing-option__per">/mo</span>
+              </div>
+              <ul class="pricing-option__list">
+                <li>12 social media posts/month</li>
+                <li>Comment &amp; DM monitoring</li>
+                <li>Monthly performance report</li>
+                <li>1 strategy call/month</li>
+              </ul>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--outline-dark btn--full">Get Started</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="pricing-card">
+          <div class="pricing-card__icon"><i data-feather="link"></i></div>
+          <h3 class="pricing-card__title">Growth Partnerships</h3>
+          <p class="pricing-card__desc">For owners ready to tap into their local network and grow through smart collaborations.</p>
+          <div class="pricing-card__options">
+            <div class="pricing-option">
+              <span class="pricing-option__type">Strategy Session</span>
+              <div class="pricing-option__price">
+                <span class="pricing-option__amount">$299</span>
+              </div>
+              <ul class="pricing-option__list">
+                <li>Local business landscape analysis</li>
+                <li>3–5 curated partner recommendations</li>
+                <li>Outreach templates &amp; scripts</li>
+                <li>Partnership launch roadmap</li>
+              </ul>
+            </div>
+            <div class="pricing-option pricing-option--monthly">
+              <span class="pricing-option__type">Active Coordination</span>
+              <div class="pricing-option__price">
+                <span class="pricing-option__amount">$249</span>
+                <span class="pricing-option__per">/mo</span>
+              </div>
+              <ul class="pricing-option__list">
+                <li>Ongoing partner outreach</li>
+                <li>Cross-promotion coordination</li>
+                <li>Referral tracking &amp; reporting</li>
+                <li><em>Add-on after strategy session</em></li>
+              </ul>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--primary btn--full">Get Started</a>
+        </div>
+
+      </div><!-- /pricing__grid -->
+
+      <!-- Bundle packages -->
+      <div class="pricing__bundles">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <p class="section-header__eyebrow">Bundle &amp; Save</p>
+          <h3 class="pricing__bundles-title">Combine services for the best value</h3>
+        </div>
+        <div class="bundles__grid">
+
+          <div class="bundle-card">
+            <div class="bundle-card__tag">Starter</div>
+            <h4 class="bundle-card__name">Roots Bundle</h4>
+            <p class="bundle-card__desc">The perfect starting point before committing to ongoing services.</p>
+            <div class="bundle-card__price">
+              <span class="bundle-card__amount">$549</span>
+              <span class="bundle-card__save">Save $99</span>
+            </div>
+            <ul class="bundle-card__includes">
+              <li><i data-feather="check"></i> Operations Audit ($349 value)</li>
+              <li><i data-feather="check"></i> Growth Partnership Strategy Session ($299 value)</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary">Get This Bundle</a>
+          </div>
+
+          <div class="bundle-card bundle-card--featured">
+            <div class="bundle-card__tag bundle-card__tag--featured">Best Value</div>
+            <h4 class="bundle-card__name">Full Growth Bundle</h4>
+            <p class="bundle-card__desc">Complete ongoing support across all three services — hand it off and watch it grow.</p>
+            <div class="bundle-card__price">
+              <span class="bundle-card__amount">$799<span class="bundle-card__per">/mo</span></span>
+              <span class="bundle-card__save">Save $48/mo</span>
+            </div>
+            <ul class="bundle-card__includes">
+              <li><i data-feather="check"></i> Monthly Operations Support ($199 value)</li>
+              <li><i data-feather="check"></i> Monthly Tech Management ($399 value)</li>
+              <li><i data-feather="check"></i> Active Partnership Coordination ($249 value)</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary">Get This Bundle</a>
+          </div>
+
+        </div>
+        <p class="pricing__note">
+          All prices are mock/starting rates and can be customized. Not sure what you need?
+          <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/nomaconsultingco/free-consultation'});return false;">Book the free 20-min consultation</a> and we'll figure it out together.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
        FREE CONSULTATION CTA BANNER
   ═══════════════════════════════════════════════ -->
   <section class="cta-banner">
@@ -341,7 +526,7 @@
           technology opportunity—no commitment, no pressure.
         </p>
       </div>
-      <a href="#contact" class="btn btn--primary btn--large">Schedule Your Free Review</a>
+      <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/nomaconsultingco/free-consultation'});return false;" class="btn btn--primary btn--large">Schedule Your Free Review</a>
     </div>
   </section>
 
@@ -433,7 +618,8 @@
 
       <!-- FORM SETUP: Replace YOUR_FORM_ID in the action below with your Formspree form ID.
            Sign up free at https://formspree.io — takes 2 minutes. -->
-      <form class="contact__form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+      <form class="contact__form" id="contactForm" action="https://formspree.io/f/xbdejkyr" method="POST"
+        novalidate>
         <div class="form__row">
           <div class="form__group">
             <label for="name">Your Name <span class="form__req">*</span></label>
@@ -468,7 +654,8 @@
         </div>
         <div class="form__group">
           <label for="message">Tell us about your business <span class="form__req">*</span></label>
-          <textarea id="message" name="message" rows="4" placeholder="What does your business do? What are your biggest challenges right now?" required></textarea>
+          <textarea id="message" name="message" rows="4"
+            placeholder="What does your business do? What are your biggest challenges right now?" required></textarea>
         </div>
         <div class="form__group form__group--checkbox">
           <label class="form__checkbox-label">
@@ -493,7 +680,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <p class="footer__logo">[Your Business Name]</p>
+        <p class="footer__logo">Noma Consulting Co</p>
         <p class="footer__tagline">Helping small businesses operate smarter,<br />reach further, and grow faster.</p>
       </div>
       <div class="footer__links">
@@ -530,7 +717,7 @@
     </div>
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p>&copy; 2026 [Your Business Name]. All Rights Reserved.</p>
+        <p>&copy; 2026 Noma Consulting Co. All Rights Reserved.</p>
         <p><a href="#">Privacy Policy</a></p>
       </div>
     </div>
@@ -538,4 +725,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

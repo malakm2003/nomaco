@@ -1,4 +1,8 @@
-# [Your Business Name] — Website
+# Noma Consulting Co — Website
+
+**Domain:** nomaconsultingco.com  
+**GitHub:** github.com/malakm2003/consulting-website  
+**Hosting:** Netlify (connected to GitHub repo)
 
 Small Business Operations & Technology Growth Partner — company website.
 
@@ -50,15 +54,12 @@ In `css/style.css`, find `.hero` and update the `background-image` URL:
 }
 ```
 
-## Setting Up the Contact Form (Formspree)
+## Contact Form & Calendly (already connected ✓)
 
-1. Go to [formspree.io](https://formspree.io) and create a free account
-2. Create a new form — it gives you a Form ID like `xyzabcde`
-3. In `index.html`, find the `<form>` tag and replace `YOUR_FORM_ID`:
-   ```html
-   <form action="https://formspree.io/f/xyzabcde" ...>
-   ```
-4. Done — form submissions will go straight to your email.
+- **Formspree**: `https://formspree.io/f/xbdejkyr` — form submissions go to your inbox
+- **Calendly**: `https://calendly.com/nomaconsultingco/free-consultation` — all "Free Consultation" buttons open the booking popup
+
+To update the Calendly link site-wide, search for `nomaconsultingco/free-consultation` in `index.html`.
 
 ## Deploying to GitHub Pages (Free Hosting)
 
