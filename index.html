@@ -5,674 +5,312 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="NoMa Consulting helps mom-and-pop shops operate smarter, build their digital presence, and grow through practical technology and partnership strategies. Based at nomaconsultingco.com." />
-  <title>NoMa Consulting — Small Business Growth Partner</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Google Fonts -->
+    content="The Noma Photobooth — a walnut photo booth that prints your pictures on paper strips. For parties, coffee shops and markets. Pics or it didn't happen!" />
+  <title>The Noma Photobooth — Pics or it didn't happen!</title>
+  <link rel="canonical" href="https://thenomaco.com/" />
+  <meta property="og:title" content="The Noma Photobooth" />
+  <meta property="og:description" content="Pics or it didn't happen! A photo booth that prints on paper strips." />
+  <meta property="og:url" content="https://thenomaco.com/" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <meta property="og:image" content="https://thenomaco.com/images/icon-512.png" />
+  <meta name="theme-color" content="#4a2a1b" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,300..800&family=Pinyon+Script&family=DM+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
-  <!-- Feather Icons -->
-  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-  <!-- Calendly popup widget -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-  <!-- ═══════════════════════════════════════════════
-       NAVIGATION
-  ═══════════════════════════════════════════════ -->
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#home" class="nav__logo">
-        <!-- To use a logo image instead: <img src="images/logo.png" alt="NoMa Consulting" class="nav__logo-img" /> -->
-        <span class="nav__logo-text">NoMa Consulting</span>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="logo" aria-label="The Noma Photobooth — home">
+        <span class="wordmark" role="img" aria-label="noma"></span>
       </a>
-
-      <ul class="nav__links" id="navLinks">
-        <li><a href="#home" class="nav__link">Home</a></li>
-        <li><a href="#services" class="nav__link">Services</a></li>
-        <li><a href="#about" class="nav__link">About</a></li>
-        <li><a href="#process" class="nav__link">Our Approach</a></li>
-        <li><a href="#contact" class="nav__link">Work With Us</a></li>
-        <li><a href=""
-            onclick="Calendly.initPopupWidget({url:'https://calendly.com/nomaconsultingco/free-consultation'});return false;"
-            class="nav__link nav__link--cta">Free Consultation</a></li>
-      </ul>
-
-      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <nav class="nav__links" aria-label="Main">
+        <a href="#how">the process</a>
+        <a href="#booth">the booth</a>
+        <a href="#faq">questions</a>
+      </nav>
+      <a href="#book" class="btn btn--small">book</a>
     </div>
-  </nav>
+  </header>
 
-  <!-- Mobile Menu Overlay -->
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">&times;</button>
-    <ul class="mobile-menu__links">
-      <li><a href="#home" class="mobile-menu__link">Home</a></li>
-      <li><a href="#services" class="mobile-menu__link">Services</a></li>
-      <li><a href="#about" class="mobile-menu__link">About</a></li>
-      <li><a href="#process" class="mobile-menu__link">Our Approach</a></li>
-      <li><a href="#who" class="mobile-menu__link">Who We Help</a></li>
-      <li><a href="#contact" class="mobile-menu__link">Work With Us</a></li>
-      <li><a href=""
-          onclick="Calendly.initPopupWidget({url:'https://calendly.com/nomaconsultingco/free-consultation'});return false;"
-          class="mobile-menu__link mobile-menu__link--cta">Free Consultation</a></li>
-    </ul>
-  </div>
+  <main id="top">
 
-
-  <!-- ═══════════════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════════════ -->
-  <section class="hero" id="home">
-    <div class="hero__overlay"></div>
-    <div class="hero__content">
-      <p class="hero__eyebrow">Small Business Growth Partner</p>
-      <h1 class="hero__headline">
-        We simplify your<br />
-        <span class="hero__rotating" id="rotatingWord">operations.</span>
-      </h1>
-      <p class="hero__sub">
-        Helping family-owned businesses build their digital presence,
-        streamline daily workflows, and grow through smart, practical solutions.
-      </p>
-      <div class="hero__buttons">
-        <a href="#services" class="btn btn--primary">Explore Services</a>
-        <a href=""
-          onclick="Calendly.initPopupWidget({url:'https://calendly.com/nomaconsultingco/free-consultation'});return false;"
-          class="btn btn--outline">Get a Free Consultation</a>
-      </div>
-    </div>
-    <a href="#services" class="hero__scroll" aria-label="Scroll down">
-      <span class="hero__scroll-line"></span>
-    </a>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════════
-       TAGLINE STRIP
-  ═══════════════════════════════════════════════ -->
-  <div class="strip">
-    <div class="strip__inner">
-      <span>Operations &amp; Workflow</span>
-      <span class="strip__dot">✦</span>
-      <span>Social Media Management</span>
-      <span class="strip__dot">✦</span>
-      <span>Website Design &amp; Setup</span>
-      <span class="strip__dot">✦</span>
-      <span>Business Automation</span>
-      <span class="strip__dot">✦</span>
-      <span>Partnership Strategy</span>
-    </div>
-  </div>
-
-
-  <!-- ═══════════════════════════════════════════════
-       SERVICES
-  ═══════════════════════════════════════════════ -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-header__eyebrow">What We Do</p>
-        <h2 class="section-header__title">Three Ways We Help Your Business Thrive</h2>
-        <p class="section-header__sub">
-          We combine hands-on implementation with practical technology to deliver real, lasting results.
-        </p>
-      </div>
-
-      <div class="services__grid">
-
-        <div class="service-card" data-index="1">
-          <div class="service-card__number">01</div>
-          <div class="service-card__icon">
-            <i data-feather="settings"></i>
+    <!-- HERO: the booth itself — lightbox sign on a walnut cabinet -->
+    <section class="hero">
+      <div class="booth">
+        <div class="lightbox">
+          <p class="lightbox__line"><span>THE</span> <span class="wordmark" role="img" aria-label="noma"></span></p>
+          <p class="lightbox__line">PHOTOBOOTH</p>
+        </div>
+        <div class="cabinet">
+          <div class="cabinet__panel">
+            <h1 class="cabinet__slogan">
+              <span class="script">pics</span>
+              <span class="cabinet__rest">or it didn't happen!</span>
+            </h1>
+            <p class="cabinet__sub">snap it, print it, pocket it</p>
+            <a href="#book" class="btn btn--cream">check our dates</a>
           </div>
-          <h3 class="service-card__title">Operations Optimization</h3>
-          <p class="service-card__desc">
-            We audit how your business actually runs day-to-day, then fix it. Less time
-            fighting fires, more time serving customers—with systems that work even when you're not watching.
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>pics or it didn't happen!</span><span class="wordmark" role="img" aria-label="noma"></span>
+        <span>pics or it didn't happen!</span><span class="wordmark" role="img" aria-label="noma"></span>
+        <span>pics or it didn't happen!</span><span class="wordmark" role="img" aria-label="noma"></span>
+        <span>pics or it didn't happen!</span><span class="wordmark" role="img" aria-label="noma"></span>
+        <span>pics or it didn't happen!</span><span class="wordmark" role="img" aria-label="noma"></span>
+        <span>pics or it didn't happen!</span><span class="wordmark" role="img" aria-label="noma"></span>
+      </div>
+    </div>
+
+    <!-- PROCESS: steps around the interactive receipt -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">the process</p>
+          <h2 class="title">FOUR TAPS TO<br /><span class="script">proof.</span></h2>
+        </div>
+
+        <div class="how__grid">
+          <ol class="how__steps how__steps--left">
+            <li class="step reveal">
+              <span class="step__num">01</span>
+              <h3>SAY CHEESE</h3>
+              <p>Walk right up — the screen does the rest. Zero downloads.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step__num">02</span>
+              <h3>SQUEEZE IN</h3>
+              <p>Bring your best friend, your mom, or the whole dance floor.</p>
+            </li>
+          </ol>
+
+          <div class="how__receipt reveal">
+            <div class="printer" id="printer">
+              <div class="printer__slot"></div>
+              <div class="receipt" id="receipt">
+                <p class="receipt__head">THE <span class="wordmark" role="img" aria-label="noma"></span></p>
+                <p class="receipt__head receipt__head--sub">PHOTOBOOTH</p>
+                <p class="receipt__meta"><span>RECEIPT</span><span id="receiptNo">#0001</span></p>
+                <div class="receipt__photo receipt__photo--1"></div>
+                <div class="receipt__photo receipt__photo--2"></div>
+                <div class="receipt__photo receipt__photo--3"></div>
+                <div class="receipt__rows">
+                  <span>FRIENDS</span><span>×4</span>
+                  <span>INSIDE JOKES</span><span>×12</span>
+                </div>
+                <p class="receipt__total"><span>PROOF</span><span>ATTACHED</span></p>
+                <p class="receipt__thanks">PICS OR IT DIDN'T HAPPEN!</p>
+                <div class="receipt__barcode"></div>
+              </div>
+            </div>
+            <button type="button" class="reprint" id="reprint">
+              <span class="reprint__dot"></span> one more round
+            </button>
+          </div>
+
+          <ol class="how__steps how__steps--right" start="3">
+            <li class="step reveal">
+              <span class="step__num">03</span>
+              <h3>WATCH IT ROLL OUT</h3>
+              <p>Seconds later, a little paper strip of you slides out warm.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step__num">04</span>
+              <h3>SHOW EVERYONE</h3>
+              <p>Tape it to your mirror, tuck it in your wallet, post the evidence. Because…</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE BOOTH -->
+    <section class="section wood" id="booth">
+      <div class="container split">
+        <div class="split__copy reveal">
+          <p class="eyebrow eyebrow--cream">meet the booth</p>
+          <h2 class="title title--cream">WALNUT, WARM LIGHT &amp; <span class="script">paper.</span></h2>
+          <p>
+            A wooden cabinet with a glowing sign on top — it looks good in the corner of any room,
+            and nobody needs to babysit it. You host, the booth handles the photos.
           </p>
-          <ul class="service-card__list">
-            <li>Full workflow audit &amp; bottleneck report</li>
-            <li>Scheduling &amp; task tracking setup</li>
-            <li>Team coordination structure</li>
-            <li>90-day action roadmap</li>
+        </div>
+        <div class="ticket reveal">
+          <p class="ticket__title">YOUR ORDER</p>
+          <ul class="ticket__list">
+            <li><span>1 × noma booth</span><span>✓</span></li>
+            <li><span>Prints, as many as you like</span><span>✓</span></li>
+            <li><span>Strip designed around your event</span><span>✓</span></li>
+            <li><span>We bring it &amp; we pack it up</span><span>✓</span></li>
+            <li><span>Friendly host on site</span><span>ADD-ON</span></li>
           </ul>
-          <a href="#contact" class="service-card__link">Get a quote →</a>
-        </div>
-
-        <div class="service-card service-card--featured" data-index="2">
-          <div class="service-card__badge">Most Popular</div>
-          <div class="service-card__number">02</div>
-          <div class="service-card__icon">
-            <i data-feather="monitor"></i>
-          </div>
-          <h3 class="service-card__title">Technology &amp; Digital Presence</h3>
-          <p class="service-card__desc">
-            We get your business online, looking good, and running on autopilot. Social media,
-            website, automated follow-ups—we build it, manage it, and keep it working for you.
-          </p>
-          <ul class="service-card__list">
-            <li>Social media setup &amp; monthly content</li>
-            <li>Website design or refresh</li>
-            <li>Booking &amp; scheduling automation</li>
-            <li>Automated customer follow-up workflows</li>
-          </ul>
-          <a href="#contact" class="service-card__link">Get a quote →</a>
-        </div>
-
-        <div class="service-card" data-index="3">
-          <div class="service-card__number">03</div>
-          <div class="service-card__icon">
-            <i data-feather="link"></i>
-          </div>
-          <h3 class="service-card__title">Growth Partnerships</h3>
-          <p class="service-card__desc">
-            We connect you with other local businesses for mutual growth. Think joint promotions,
-            shared audiences, and referral networks that bring in customers without ad spend.
-          </p>
-          <ul class="service-card__list">
-            <li>Local business landscape analysis</li>
-            <li>Curated partner matchmaking</li>
-            <li>Cross-promotion campaign coordination</li>
-            <li>Referral pipeline setup &amp; tracking</li>
-          </ul>
-          <a href="#contact" class="service-card__link">Get a quote →</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════════
-       BOLD BREAK DIVIDER
-  ═══════════════════════════════════════════════ -->
-  <div class="bold-break">
-    <div class="bold-break__inner">
-      <p class="bold-break__large">RETHINK</p>
-      <p class="bold-break__large bold-break__large--outline">YOUR BUSINESS.</p>
-    </div>
-  </div>
-
-
-  <!-- ═══════════════════════════════════════════════
-       ABOUT
-  ═══════════════════════════════════════════════ -->
-  <section class="about" id="about">
-    <div class="container about__grid">
-
-      <div class="about__image-wrap">
-        <!-- Replace with your own team/workspace photo by swapping the src below -->
-        <img class="about__image" src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80"
-          alt="Two consultants working with a local small business owner" loading="lazy" />
-        <div class="about__stat-card">
-          <span class="about__stat-number">100%</span>
-          <span class="about__stat-label">Hands-On Implementation</span>
+          <p class="ticket__fine">WANT IT FOR A WEEK OR A SEASON? JUST ASK</p>
         </div>
       </div>
+    </section>
 
-      <div class="about__content">
-        <p class="section-header__eyebrow">About Us</p>
-        <h2 class="about__title">We don't hand you a report and leave.</h2>
-        <p class="about__body">
-          We started this business because we saw a real gap: small business owners who work
-          incredibly hard every day, but don't have access to the kind of operational and
-          technology support that bigger companies take for granted.
-        </p>
-        <p class="about__body">
-          We work directly alongside owners—implementing changes, training your team,
-          managing your digital presence, and staying until results are real and sustainable.
-          No jargon. No unnecessary complexity. Just practical improvements that make a difference.
-        </p>
-        <div class="about__pillars">
-          <div class="about__pillar">
-            <i data-feather="check-circle"></i>
-            <span>Project management expertise</span>
-          </div>
-          <div class="about__pillar">
-            <i data-feather="check-circle"></i>
-            <span>Workflow design experience</span>
-          </div>
-          <div class="about__pillar">
-            <i data-feather="check-circle"></i>
-            <span>Modern technology knowledge</span>
-          </div>
-          <div class="about__pillar">
-            <i data-feather="check-circle"></i>
-            <span>Results that are realistic &amp; sustainable</span>
-          </div>
+    <!-- WHERE -->
+    <section class="section" id="for">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">where you'll find us</p>
+          <h2 class="title">ANYWHERE WORTH <span class="script">remembering.</span></h2>
         </div>
-        <a href="#contact" class="btn btn--primary">Work With Us</a>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════════
-       PROCESS
-  ═══════════════════════════════════════════════ -->
-  <section class="process" id="process">
-    <div class="container">
-      <div class="section-header section-header--light">
-        <p class="section-header__eyebrow section-header__eyebrow--light">Our Approach</p>
-        <h2 class="section-header__title">How We Work With You</h2>
-        <p class="section-header__sub">
-          A clear four-step process to ensure every engagement delivers real, measurable results.
-        </p>
-      </div>
-
-      <div class="process__steps">
-
-        <div class="process__step">
-          <div class="process__step-num">01</div>
-          <div class="process__step-content">
-            <h3>Business Workflow Review</h3>
-            <p>We analyze your daily operations, customer flow, communication systems, and tool usage to understand
-              exactly where time and money are being lost.</p>
-          </div>
-        </div>
-
-        <div class="process__connector"></div>
-
-        <div class="process__step">
-          <div class="process__step-num">02</div>
-          <div class="process__step-content">
-            <h3>Opportunity Mapping</h3>
-            <p>We identify your top time-saving improvements, automation opportunities, coordination gaps, and
-              revenue-growth openings—then prioritize by impact.</p>
-          </div>
-        </div>
-
-        <div class="process__connector"></div>
-
-        <div class="process__step">
-          <div class="process__step-num">03</div>
-          <div class="process__step-content">
-            <h3>Implementation Plan</h3>
-            <p>We roll up our sleeves and implement: workflow improvements, technology setup, digital presence, and
-              engagement strategies—with you, not just for you.</p>
-          </div>
-        </div>
-
-        <div class="process__connector"></div>
-
-        <div class="process__step">
-          <div class="process__step-num">04</div>
-          <div class="process__step-content">
-            <h3>Ongoing Support <span class="process__optional">(Optional)</span></h3>
-            <p>Businesses can continue working with us as their growth partner—monthly check-ins, new improvements, and
-              priority support as they scale.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════════
-       WHO WE HELP
-  ═══════════════════════════════════════════════ -->
-  <section class="who" id="who">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-header__eyebrow">Who We Work With</p>
-        <h2 class="section-header__title">Built for Owner-Operated Businesses</h2>
-        <p class="section-header__sub">
-          If you run your business yourself and want support that actually works in the real world—we built this for
-          you.
-        </p>
-      </div>
-
-      <div class="who__grid">
-        <div class="who__tile"><i data-feather="shopping-bag"></i><span>Retail Stores</span></div>
-        <div class="who__tile"><i data-feather="coffee"></i><span>Restaurants &amp; Cafés</span></div>
-        <div class="who__tile"><i data-feather="scissors"></i><span>Salons &amp; Barbershops</span></div>
-        <div class="who__tile"><i data-feather="activity"></i><span>Fitness Studios</span></div>
-        <div class="who__tile"><i data-feather="tool"></i><span>Repair Shops</span></div>
-        <div class="who__tile"><i data-feather="home"></i><span>Local Service Providers</span></div>
-        <div class="who__tile"><i data-feather="briefcase"></i><span>Family-Owned Offices</span></div>
-        <div class="who__tile"><i data-feather="heart"></i><span>Community Businesses</span></div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════════
-       WHAT'S INCLUDED
-  ═══════════════════════════════════════════════ -->
-  <section class="pricing" id="pricing">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-header__eyebrow">What's Included</p>
-        <h2 class="section-header__title">Tailored to Your Business, Not a Template</h2>
-        <p class="section-header__sub">
-          Every engagement is scoped around your actual needs. We'll talk through what's right for you — no packages
-          to guess from, no price walls to hit.
-        </p>
-      </div>
-
-      <!-- Per-service cards -->
-      <div class="pricing__grid">
-
-        <!-- Service 1 -->
-        <div class="pricing-card">
-          <div class="pricing-card__icon"><i data-feather="settings"></i></div>
-          <h3 class="pricing-card__title">Operations Optimization</h3>
-          <p class="pricing-card__desc">For owners who want clarity on how their business runs and a clear plan to fix
-            it.</p>
-          <div class="pricing-card__options">
-            <div class="pricing-option">
-              <span class="pricing-option__type">One-Time Audit</span>
-              <ul class="pricing-option__list">
-                <li>2–3 hour deep-dive session</li>
-                <li>Full workflow audit &amp; bottleneck report</li>
-                <li>90-day priority action roadmap</li>
-                <li>1 follow-up strategy call</li>
-              </ul>
-            </div>
-            <div class="pricing-option pricing-option--monthly">
-              <span class="pricing-option__type">Ongoing Support</span>
-              <ul class="pricing-option__list">
-                <li>Monthly check-in call</li>
-                <li>Ongoing process improvements</li>
-                <li>Email support</li>
-                <li><em>Add-on after audit</em></li>
-              </ul>
-            </div>
-          </div>
-          <a href="#contact" class="btn btn--primary btn--full">Get a Custom Quote</a>
-        </div>
-
-        <!-- Service 2 — Featured -->
-        <div class="pricing-card pricing-card--featured">
-          <div class="pricing-card__badge">Most Popular</div>
-          <div class="pricing-card__icon"><i data-feather="monitor"></i></div>
-          <h3 class="pricing-card__title">Technology &amp; Digital Presence</h3>
-          <p class="pricing-card__desc">For businesses that need to get online, stay visible, and stop losing customers
-            to competitors.</p>
-          <div class="pricing-card__options">
-            <div class="pricing-option">
-              <span class="pricing-option__type">Setup Package</span>
-              <ul class="pricing-option__list">
-                <li>Social media profiles (up to 3 platforms)</li>
-                <li>Website build or refresh</li>
-                <li>Booking &amp; scheduling tool setup</li>
-                <li>Automated follow-up system</li>
-              </ul>
-            </div>
-            <div class="pricing-option pricing-option--monthly">
-              <span class="pricing-option__type">Monthly Management</span>
-              <ul class="pricing-option__list">
-                <li>12 social media posts/month</li>
-                <li>Comment &amp; DM monitoring</li>
-                <li>Monthly performance report</li>
-                <li>1 strategy call/month</li>
-              </ul>
-            </div>
-          </div>
-          <a href="#contact" class="btn btn--outline-dark btn--full">Get a Custom Quote</a>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="pricing-card">
-          <div class="pricing-card__icon"><i data-feather="link"></i></div>
-          <h3 class="pricing-card__title">Growth Partnerships</h3>
-          <p class="pricing-card__desc">For owners ready to tap into their local network and grow through smart
-            collaborations.</p>
-          <div class="pricing-card__options">
-            <div class="pricing-option">
-              <span class="pricing-option__type">Strategy Session</span>
-              <ul class="pricing-option__list">
-                <li>Local business landscape analysis</li>
-                <li>3–5 curated partner recommendations</li>
-                <li>Outreach templates &amp; scripts</li>
-                <li>Partnership launch roadmap</li>
-              </ul>
-            </div>
-            <div class="pricing-option pricing-option--monthly">
-              <span class="pricing-option__type">Active Coordination</span>
-              <ul class="pricing-option__list">
-                <li>Ongoing partner outreach</li>
-                <li>Cross-promotion coordination</li>
-                <li>Referral tracking &amp; reporting</li>
-                <li><em>Add-on after strategy session</em></li>
-              </ul>
-            </div>
-          </div>
-          <a href="#contact" class="btn btn--primary btn--full">Get a Custom Quote</a>
-        </div>
-
-      </div><!-- /pricing__grid -->
-
-      <!-- Pricing CTA -->
-      <div class="pricing__cta-row">
-        <p class="pricing__cta-text">
-          Not sure which service fits? Start with our free 20-minute consultation and we'll figure it out together.
-        </p>
-        <a href=""
-          onclick="Calendly.initPopupWidget({url:'https://calendly.com/nomaconsultingco/free-consultation'});return false;"
-          class="btn btn--primary">Book a Free Consultation</a>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════════
-       FREE CONSULTATION CTA BANNER
-  ═══════════════════════════════════════════════ -->
-  <section class="cta-banner">
-    <div class="container cta-banner__inner">
-      <div class="cta-banner__text">
-        <h2>Free 20-Minute Operations Health Check</h2>
-        <p>
-          We'll identify your top 3 operational bottlenecks and your single biggest
-          technology opportunity—no commitment, no pressure.
-        </p>
-      </div>
-      <a href=""
-        onclick="Calendly.initPopupWidget({url:'https://calendly.com/nomaconsultingco/free-consultation'});return false;"
-        class="btn btn--primary btn--large">Schedule Your Free Review</a>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════════
-       BEFORE & AFTER RESULTS
-  ═══════════════════════════════════════════════ -->
-  <section class="results" id="results">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-header__eyebrow">Results</p>
-        <h2 class="section-header__title">What Changes Look Like</h2>
-      </div>
-
-      <div class="results__grid">
-
-        <div class="results__card">
-          <div class="results__before">
-            <span class="results__label results__label--before">Before</span>
-            <p>No social media presence — customers couldn't find the business online</p>
-          </div>
-          <div class="results__arrow"><i data-feather="arrow-right"></i></div>
-          <div class="results__after">
-            <span class="results__label results__label--after">After</span>
-            <p>Active profiles on Google, Instagram &amp; Facebook — new inquiries within the first month</p>
-          </div>
-        </div>
-
-        <div class="results__card">
-          <div class="results__before">
-            <span class="results__label results__label--before">Before</span>
-            <p>Owner spent 2+ hours daily on scheduling and manual follow-ups</p>
-          </div>
-          <div class="results__arrow"><i data-feather="arrow-right"></i></div>
-          <div class="results__after">
-            <span class="results__label results__label--after">After</span>
-            <p>Automated workflows cut that to under 20 minutes per day</p>
-          </div>
-        </div>
-
-        <div class="results__card">
-          <div class="results__before">
-            <span class="results__label results__label--before">Before</span>
-            <p>Website hadn't been updated in 3+ years — no mobile version</p>
-          </div>
-          <div class="results__arrow"><i data-feather="arrow-right"></i></div>
-          <div class="results__after">
-            <span class="results__label results__label--after">After</span>
-            <p>Fresh, mobile-friendly site live in 2 weeks with online bookings enabled</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════════════════════════
-       CONTACT
-  ═══════════════════════════════════════════════ -->
-  <section class="contact" id="contact">
-    <div class="container contact__grid">
-
-      <div class="contact__info">
-        <p class="section-header__eyebrow">Get in Touch</p>
-        <h2 class="contact__title">Let's start with a conversation.</h2>
-        <p class="contact__body">
-          Not sure where to begin? That's okay. Fill out the form and we'll reach out
-          to schedule your free 20-minute Operations Health Check.
-        </p>
-        <div class="contact__details">
-          <div class="contact__detail">
-            <i data-feather="mail"></i>
-            <!-- UPDATE: replace with your real email -->
-            <span>[your@email.com]</span>
-          </div>
-          <div class="contact__detail">
-            <i data-feather="phone"></i>
-            <!-- UPDATE: replace with your phone number -->
-            <span>[Your Phone Number]</span>
-          </div>
-          <div class="contact__detail">
-            <i data-feather="map-pin"></i>
-            <!-- UPDATE: replace with your city -->
-            <span>[Your City, State]</span>
-          </div>
+        <div class="uses">
+          <article class="use reveal">
+            <span class="use__script script">celebrate</span>
+            <h3>BIRTHDAYS, SHOWERS &amp; I-DOS</h3>
+            <p>Your guests leave with proof they were there — and a reason to text you the next day.</p>
+          </article>
+          <article class="use reveal">
+            <span class="use__script script">sip</span>
+            <h3>COFFEE SPOTS &amp; BOUTIQUES</h3>
+            <p>Park noma by your counter. Regulars stay longer, new faces wander in to try it.</p>
+          </article>
+          <article class="use reveal">
+            <span class="use__script script">launch</span>
+            <h3>MARKETS &amp; OFFICE PARTIES</h3>
+            <p>A line at your table is the best kind of line. Your name rides home on every strip.</p>
+          </article>
         </div>
       </div>
+    </section>
 
-      <!-- FORM SETUP: Replace YOUR_FORM_ID in the action below with your Formspree form ID.
-           Sign up free at https://formspree.io — takes 2 minutes. -->
-      <form class="contact__form" id="contactForm" action="https://formspree.io/f/xbdejkyr" method="POST" novalidate>
-        <div class="form__row">
-          <div class="form__group">
-            <label for="name">Your Name <span class="form__req">*</span></label>
-            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
-          </div>
-          <div class="form__group">
-            <label for="business">Business Name</label>
-            <input type="text" id="business" name="business" placeholder="Smith's Bakery" />
-          </div>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container faq">
+        <div class="section__head reveal">
+          <p class="eyebrow">questions</p>
+          <h2 class="title">YOU <span class="script">asked.</span></h2>
         </div>
-        <div class="form__row">
-          <div class="form__group">
-            <label for="email">Email <span class="form__req">*</span></label>
-            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+        <div class="faq__list reveal">
+          <details>
+            <summary>How much space does it need?</summary>
+            <p>A spot roughly the size of a café table and one regular plug. Inside, or outside under cover.</p>
+          </details>
+          <details>
+            <summary>Do the photos fade?</summary>
+            <p>Keep them away from heat and sunny windowsills and they'll hang around. Want backups? Guests can grab the digital file too.</p>
+          </details>
+          <details>
+            <summary>Can the prints be customized?</summary>
+            <p>Absolutely — send us your names, colors, logo, or a hashtag and we'll lay out the strip around it.</p>
+          </details>
+          <details>
+            <summary>How far in advance should I book?</summary>
+            <p>The sooner the better, Saturdays fill up fast. Drop your date below and we'll let you know.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section class="section wood" id="book">
+      <div class="container book">
+        <div class="book__intro reveal">
+          <p class="eyebrow eyebrow--cream">save your date</p>
+          <h2 class="title title--cream">LET'S MAKE IT<br /><span class="script">happen.</span></h2>
+          <p>Fill this out and we'll reply within a day with whether we're free and what it'll cost.</p>
+        </div>
+
+        <form class="form reveal" id="bookForm" action="https://formspree.io/f/xbdejkyr" method="POST">
+          <input type="hidden" name="_subject" value="New booth inquiry — thenomaco.com" />
+          <input type="text" name="_gotcha" class="form__hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <div class="form__row">
+            <label class="field">
+              <span>Name *</span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label class="field">
+              <span>Email *</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
           </div>
-          <div class="form__group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+
+          <div class="form__row">
+            <label class="field">
+              <span>Phone</span>
+              <input type="tel" name="phone" autocomplete="tel" />
+            </label>
+            <label class="field">
+              <span>Booking type *</span>
+              <select name="booking_type" required>
+                <option value="" disabled selected>Select one</option>
+                <option>Private event / party</option>
+                <option>Wedding</option>
+                <option>Corporate event</option>
+                <option>Café / shop placement</option>
+                <option>Pop-up / market</option>
+                <option>Other</option>
+              </select>
+            </label>
           </div>
-        </div>
-        <div class="form__group">
-          <label for="service">What can we help with?</label>
-          <select id="service" name="service">
-            <option value="">Select a service...</option>
-            <option value="operations">Operations Optimization</option>
-            <option value="technology">Technology &amp; Digital Presence</option>
-            <option value="social">Social Media Management</option>
-            <option value="website">Website Design / Refresh</option>
-            <option value="partnership">Partnership &amp; Revenue Growth</option>
-            <option value="all">All of the above / Not sure</option>
-          </select>
-        </div>
-        <div class="form__group">
-          <label for="message">Tell us about your business <span class="form__req">*</span></label>
-          <textarea id="message" name="message" rows="4"
-            placeholder="What does your business do? What are your biggest challenges right now?" required></textarea>
-        </div>
-        <div class="form__group form__group--checkbox">
-          <label class="form__checkbox-label">
-            <input type="checkbox" name="healthcheck" value="yes" />
-            <span>I'd like the free 20-minute Operations Health Check</span>
+
+          <div class="form__row">
+            <label class="field">
+              <span>Event date *</span>
+              <input type="date" name="event_date" required />
+            </label>
+            <label class="field">
+              <span>Hours needed</span>
+              <select name="hours">
+                <option value="" disabled selected>Select one</option>
+                <option>2 hours</option>
+                <option>3 hours</option>
+                <option>4 hours</option>
+                <option>5+ hours</option>
+                <option>Multi-day / ongoing</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form__row">
+            <label class="field">
+              <span>Venue / city</span>
+              <input type="text" name="location" />
+            </label>
+            <label class="field">
+              <span>Estimated guests</span>
+              <input type="number" name="guests" min="1" inputmode="numeric" />
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Anything else?</span>
+            <textarea name="message" rows="4" placeholder="Theme, logo ideas, questions…"></textarea>
           </label>
-        </div>
-        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
-        <p class="form__note">We respond within 1 business day. No spam, ever.</p>
-        <div class="form__success" id="formSuccess">
-          ✓ Thank you! We'll be in touch within one business day.
-        </div>
-      </form>
 
-    </div>
-  </section>
+          <button type="submit" class="btn btn--full">send it over</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
 
+  </main>
 
-  <!-- ═══════════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════════ -->
   <footer class="footer">
     <div class="container footer__inner">
-      <div class="footer__brand">
-        <p class="footer__logo">NoMa Consulting</p>
-        <p class="footer__tagline">Helping small businesses operate smarter,<br />reach further, and grow faster.</p>
-      </div>
+      <p class="footer__logo"><span class="wordmark" role="img" aria-label="noma"></span></p>
+      <p class="footer__slogan">pics or it didn't happen!</p>
       <div class="footer__links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#process">Our Approach</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__links">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Operations Optimization</a></li>
-          <li><a href="#services">Technology &amp; Digital</a></li>
-          <li><a href="#services">Social Media Management</a></li>
-          <li><a href="#services">Website Design</a></li>
-          <li><a href="#services">Partnership Strategy</a></li>
-        </ul>
-      </div>
-      <div class="footer__contact">
-        <h4>Get In Touch</h4>
-        <p>[your@email.com]</p>
-        <p>[Your Phone Number]</p>
-        <div class="footer__social">
-          <!-- UPDATE: add your real social media links -->
-          <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
-          <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <div class="container footer__bottom-inner">
-        <p>&copy; 2026 NoMa Consulting Co. All Rights Reserved.</p>
-        <p><a href="#">Privacy Policy</a></p>
+        <a href="https://instagram.com/thenomaco" target="_blank" rel="noopener">@thenomaco</a>
+        <a href="#book">book</a>
+        <span>© <span id="year">2026</span> the noma co.</span>
       </div>
     </div>
   </footer>
